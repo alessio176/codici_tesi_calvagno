@@ -1,0 +1,7 @@
+commento del 20/12/21:
+I segnali acquisiti sono divisi nelle due cartelle, in base al programma usato per la registrazione, cioè se matlab 
+direttamente o il nic2. Al momento i segnali migliori sono quelli ottenuti tramite NIC perchè su matlab non ho capito
+come funziona bene l' acquisizione di una durata precisa: infatti questi segnali hanno un pezzo iniziale tutto nullo e poi
+vi è il segnale acquisito, ma tale parte buona di segnale non ha una durata fissa, a differenza di come mi aspettavo 
+all' inizio. Il collegamento tramite matlab è da studiare meglio per capire come ottenere segnali di durata fissa e
+impostata dall' utente.
