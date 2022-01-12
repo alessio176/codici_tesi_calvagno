@@ -48,5 +48,29 @@ play(Y2);
 % data = registra_enobio(opt);
 % disp('data ok');
 
+%% Parte 2 - processing EEG 
+
+%%filtraggio passabasso con freq du tagio = 55 Hz.
+
+% opt.filtraggio.fc = 500; %freq di campionamento di enobio
+% opt.filtraggio.fn = 500/2; %freq di nyquist associata
+% opt.filtraggio.Wp = 50/fn; %banda passante
+% opt.filtraggio.Ws = 55/fn; %banda di stop
+% opt.filtraggio.Rp = 3; %ripple max ammesso in dB
+% opt.filtraggio.Rs = 40; %attenuazione richiesta nei limiti della banda di stop (Ws) in dB
+
+
+% data_filt = filtra_segnali(data,opt);
+% 
+% data_fft = calcola_fft(data_filt);
+% 
+% L = size(data,2);
+% 
+% P2 = abs(data_fft/L);
+% P1 = P2(1:L/2+1);
+% P1(2:end-1) = 2*P1(2:end-1);
+% 
+% f = Fs*(0:(L/2))/L;
+
 
 

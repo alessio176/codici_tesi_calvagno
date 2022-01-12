@@ -24,7 +24,7 @@ opt.filtraggio.Ws = [1 55]/opt.filtraggio.fn; %banda di stop
 opt.filtraggio.Rp = 3; %ripple max ammesso in dB
 opt.filtraggio.Rs = 40; %attenuazione richiesta nei limiti della banda di stop (Ws) in dB
 
-d = dir(string(pwd)+"\acquisizioni\segnali da nic\*.easy");
+d = dir(string(pwd)+"\acquisizioni\segnali da nic\*.easy"); %DA MODIFICARE!!!
 
 mainFolder = pwd; %salvo il percorso della cartella principale (servirà dopo)
 
